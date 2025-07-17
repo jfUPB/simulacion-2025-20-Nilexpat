@@ -20,3 +20,12 @@ Crea una textura en la obra y tambien determina el movim iento de las raices
 
 En estos momentos mes esta llamando mucho la atencion las experiencias interactivas con sonidos o gestos en vivo, me gustaria utilizarlo para crear puestas en escenas.
 
+### Actividad 03
+#### CAMINATAS ALEATORIAS
+
+Realiza el siguiente experimento y reporta los resultados en tu bitácora:
+
+* Modifica el código del ejemplo Example 0.1: A Traditional Random Walk.
+* Antes de ejecutar el código, escribe en tu bitácora qué esperas que suceda.
+* Ejecuta el código y escribe en tu bitácora qué sucedió realmente.
+* Ocurrió lo que esperabas? ¿Por qué crees que sí o por qué crees que no?
