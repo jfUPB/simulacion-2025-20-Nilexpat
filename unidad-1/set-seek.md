@@ -80,3 +80,11 @@ Cambio el fondo de varios colores y solo se vio como se movia un punto
 * Ocurrió lo que esperabas? ¿Por qué crees que sí o por qué crees que no?
 
 no, no porque queria que le punto manduviera su rastro pero se perdio.
+
+### Actividad 04
+
+* En tus propias palabras cuál es la diferencia entre una distribución uniforme y una no uniforme de números aleatorios.
+
+**RTA:** La distribucion uniforme guia al walker a pintar areas del background de manera uniforme, como se muestra en el ejemplo una linea recta con limites, y de manera no uniforme aumenta la probabilidad de incertidumbre de que el walker no pinte toda la zona delimitada, tambien intuyo que no posee una direccion concisa.
+
+* Modifica el código de la caminata aleatoria para que utilice una distribución no uniforme, favoreciendo el movimiento hacia la derecha.
