@@ -26,6 +26,57 @@ En estos momentos mes esta llamando mucho la atencion las experiencias interacti
 Realiza el siguiente experimento y reporta los resultados en tu bitácora:
 
 * Modifica el código del ejemplo Example 0.1: A Traditional Random Walk.
+
+``` js
+  
+let walker;
+
+function setup() {
+  createCanvas(640, 240);
+  walker = new Walker();
+}
+
+function draw() {
+  background(random(255), random(255), random(255), 150);
+  walker.step();
+  walker.show();
+}
+
+class Walker {
+  constructor() {
+    this.x = width / 2;
+    this.y = height / 2;
+  }
+
+  show() {
+    stroke(0);
+    point(this.x, this.y);
+  }
+
+  step() {
+    const choice = floor(random(4));
+    if (choice == 0) {
+      this.x++;
+    } else if (choice == 1) {
+      this.x--;
+    } else if (choice == 2) {
+      this.y++;
+    } else {
+      this.y--;
+    }
+  }
+}
+```
+
+**Modifico:** Se agrego un Random en los colores del background 
+  
 * Antes de ejecutar el código, escribe en tu bitácora qué esperas que suceda.
+que cambiara el color del fondo pero el trazo se mantuviera, aunque no fue asi, se arreglo un poco agregandole un alpha.
+
 * Ejecuta el código y escribe en tu bitácora qué sucedió realmente.
+
+Cambio el fondo de varios colores y solo se vio como se movia un punto
+
 * Ocurrió lo que esperabas? ¿Por qué crees que sí o por qué crees que no?
+
+no, no porque queria que le punto manduviera su rastro pero se perdio.
