@@ -104,4 +104,24 @@ no, no porque queria que le punto manduviera su rastro pero se perdio.
     }
   }
 ```
-**SOLUCION:**: se agrego en la funcion de los pasos un if else que sumara a x hacia la derecha (This.X++;) y se modifico el ramdomizador de 4 -> 5
+**SOLUCION:** se agrego en la funcion de los pasos un if else que sumara a x hacia la derecha (This.X++;) y se modifico el ramdomizador de 4 -> 5
+
+### Actividad 05
+``` js
+function setup() {
+  createCanvas(640, 240);
+  background(255);
+}
+
+function draw() {
+  //{!1} A normal distribution with mean 320 and standard deviation 60
+  let x = randomGaussian(320, 60);
+  noStroke();
+  fill(0, 10);
+  circle(x, 120, 16);
+}
+```
+**ANALISIS:** 
+
+* Se observa en la "funtion Draw()" la implementacion de una nueva funcion `Let x = randomGaussian(320, 60)`, Let x "especifica la direccion de la distribucion", randomGaussian(Media, Desviacion Estandar)
+* una funcion que dibuja un circulo `circle(x,120,16)`
