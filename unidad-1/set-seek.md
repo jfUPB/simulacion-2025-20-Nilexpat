@@ -85,6 +85,23 @@ no, no porque queria que le punto manduviera su rastro pero se perdio.
 
 * En tus propias palabras cuál es la diferencia entre una distribución uniforme y una no uniforme de números aleatorios.
 
-**RTA:** La distribucion uniforme guia al walker a pintar areas del background de manera uniforme, como se muestra en el ejemplo una linea recta con limites, y de manera no uniforme aumenta la probabilidad de incertidumbre de que el walker no pinte toda la zona delimitada, tambien intuyo que no posee una direccion concisa.
+**RTA:** La distribucion uniforme guia al walker a pintar areas del background de manera uniforme, como se muestra en el ejemplo (una linea recta) con limites, y de manera no uniforme aumenta la probabilidad de incertidumbre de que el walker no pinte toda la zona delimitada, tambien intuyo que no posee una direccion concisa.
 
 * Modifica el código de la caminata aleatoria para que utilice una distribución no uniforme, favoreciendo el movimiento hacia la derecha.
+``` js
+   step() {
+    const choice = floor(random(5));
+    if (choice == 0) {
+      this.x++;
+    } else if (choice == 1) {
+      this.x--;
+    } else if (choice == 4) {
+      this.x++;
+    } else if (choice == 2) {
+      this.y++;
+    } else {
+      this.y--;
+    }
+  }
+```
+**SOLUCION:**: se agrego en la funcion de los pasos un if else que sumara a x hacia la derecha (This.X++;) y se modifico el ramdomizador de 4 -> 5
