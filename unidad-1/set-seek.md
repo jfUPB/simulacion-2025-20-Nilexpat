@@ -134,3 +134,29 @@ function draw() {
 `16` → diámetro del círculo
 * ` noStroke();` las figuras no tendran borde solo relleno.
 * `fill(0, 100, 255, 50);` // define el color y la opacidad del objeto (Azul claro con opacidad baja)
+
+``` js
+function setup() {
+  createCanvas(640, 240);
+  background(0);
+}
+
+function draw() {
+  //{!1} A normal distribution with mean 320 and standard deviation 60
+  let x = randomGaussian(320, 15);
+  let y = randomGaussian(100, 15);
+  noStroke();
+  fill(random(255), random(255),random(255),50);
+  circle(x, y, random(200));
+}
+  ```
+[Codigo editado](https://editor.p5js.org/nicolasparra2024/sketches/WEY5RuNXG)
+
+
+###  Actividad 06
+#### Distribución personalizada: Lévy flight
+* Crea un nuevo sketch en p5.js donde modifiques uno de los ejemplos anteriores y adiciones de Lévy flight.
+* Explica por qué usaste esta técnica y qué resultados esberabas obtener.
+* Copia el código en tu bitácora.
+* Coloca en enlace a tu sketch en p5.js en tu bitácora.
+* Selecciona una captura de pantalla de tu sketch y colócala en tu bitácora.
