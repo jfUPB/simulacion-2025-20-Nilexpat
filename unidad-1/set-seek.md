@@ -125,3 +125,10 @@ function draw() {
 
 * Se observa en la "funtion Draw()" la implementacion de una nueva funcion `Let x = randomGaussian(320, 60)`, Let x "especifica la direccion de la distribucion", randomGaussian(Media, Desviacion Estandar)
 * una funcion que dibuja un circulo `circle(x,120,16)`
+  Dibuja un círculo en:
+
+`x` → posición horizontal (aleatoria con distribución normal)
+
+`120` → posición vertical fija
+
+`16` → diámetro del círculo
