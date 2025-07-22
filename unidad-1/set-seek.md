@@ -132,3 +132,5 @@ function draw() {
 `120` → posición vertical fija
 
 `16` → diámetro del círculo
+* ` noStroke();` las figuras no tendran borde solo relleno.
+* `fill(0, 100, 255, 50);` // define el color y la opacidad del objeto (Azul claro con opacidad baja)
