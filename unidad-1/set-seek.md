@@ -78,6 +78,9 @@ function acceptreject() {
   
 * Coloca en enlace a tu sketch en p5.js en tu bitácora.
 
- <codigo><https://editor.p5js.org/nicolasparra2024/sketches/O0_ubqVxs>
+[Link del programa creado](https://editor.p5js.org/nicolasparra2024/sketches/O0_ubqVxs)
   
 * Selecciona una captura de pantalla de tu sketch y colócala en tu bitácora.
+
+  <img width="449" height="220" alt="image" src="https://github.com/user-attachments/assets/7f59729f-ad76-4c2f-8e65-83b5c506a521" />
+
