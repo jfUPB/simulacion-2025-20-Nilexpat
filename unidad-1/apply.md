@@ -25,7 +25,7 @@ let particles = [];
 ```
 
 *function setup()*
-```
+``` js
   createCanvas(600, 240);
   generateParticles(); // Genera partículas al inicio
   // Elegimos un color aleatorio al inicio, no lo coloque en la funcion draw porque hace que las particulas parpadeen y hace que se vea poco armonico
