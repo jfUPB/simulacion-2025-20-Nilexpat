@@ -50,8 +50,8 @@ El ruido de perlin: me parecio bello cuado lo vi en formato 3D.
 
 * Al combinar diferentes técnicas de aleatoriedad, ¿Cuál fue el mayor desafío? ¿La interacción entre los sistemas, el control de los parámetros, el rendimiento?
 
-en este caso siento que fue mas la parte creativa, porque eran tantas funciones aleatorias que ya no sabia que meterle mas aleatorismo.
+En este caso siento que fue mas la parte creativa, porque eran tantas funciones aleatorias que ya no sabia que meterle de mas aleatorismo.
   
 * Si tuvieras que empezar la Actividad 08 de nuevo, ¿Qué harías de manera diferente basándote en lo que sabes ahora?
 
-le agregaria un salto de levi en la funcion del mause y cada ves que se active la probablidad cambien de figura.
+le agregaria un salto de levi en la funcion del mouse y cada ves que se active la probabilidad cambien de figura.
