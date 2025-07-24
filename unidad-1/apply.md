@@ -153,4 +153,7 @@ class Particle {
 Coloca en enlace a tu sketch en p5.js en tu bitácora.
 
 [Enlace de la Apply](https://editor.p5js.org/nicolasparra2024/sketches/EacQ1BuK4)
-Selecciona una captura de pantalla de tu sketch y colócala en tu bitácora.
+
+3. Selecciona una captura de pantalla de tu sketch y colócala en tu bitácora.
+   <img width="475" height="304" alt="image" src="https://github.com/user-attachments/assets/1c346074-58bb-4820-92d1-9fc003d5f2a2" />
+
