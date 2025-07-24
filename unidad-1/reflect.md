@@ -55,3 +55,27 @@ En este caso siento que fue mas la parte creativa, porque eran tantas funciones 
 * Si tuvieras que empezar la Actividad 08 de nuevo, ¿Qué harías de manera diferente basándote en lo que sabes ahora?
 
 le agregaria un salto de levi en la funcion del mouse y cada ves que se active la probabilidad cambien de figura.
+
+### Actividad 11
+
+* Continuar: ¿Qué actividad, ejemplo o explicación de esta unidad te resultó más reveladora o útil para tu aprendizaje? ¿Qué deberíamos mantener sí o sí?
+
+La liena del arte generativo me parece muy importante para el tema de experiencias interactivas.
+
+* Dejar de hacer: ¿Hubo alguna actividad o concepto que te pareció redundante, confuso o menos útil? ¿Hay algo que eliminarías o cambiarías por completo?
+
+No.
+
+
+* Empezar a hacer: ¿Qué te faltó en esta unidad? ¿Quizás más ejemplos de artistas, más desafíos técnicos, más teoría? ¿Qué idea tienes para hacerla mejor?
+
+me gustaria que hubieran retos, que podamos recrear con pistas en el camino, como replica esta animacion teniendo encuenta tal texto o codigo de esta unidad, siento que tengo un bloqueo mental que si no lo veo posible, no es posible crearlo mas que todo porque soy principiante en esta materia.
+
+
+* Balance Teoría-Práctica: ¿Cómo sentiste el equilibrio entre analizar los ejemplos del texto guía y ponerte a programar tus propios sketches? Explica tu respuesta.
+
+Me gusta la metodologia aunque sinto que puede ser un poco cargada para la distribucion de mi tiempo aveces me tomo mas de media hora por ejercicio.
+
+* Comentario Adicional: ¿Hay algo más que quieras compartir sobre tu experiencia en esta unidad?
+  
+No.
