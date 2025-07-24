@@ -39,12 +39,19 @@ Parte 2: reflexión sobre tu proceso (Metacognición)
 * ¿Cuál fue el concepto más abstracto o difícil de “visualizar” para ti en esta unidad? ¿Qué hiciste para finalmente comprenderlo?
 Describe un momento durante el desarrollo de tu obra final (Actividad 08) en el que un “error” o un resultado inesperado te llevó a una idea creativa interesante.
 
+*Dificil*
 
+Salto de Levy: no estudie el ejemplo adecuado 
 
 *abstracto*
 
-El ruido de perlin: me parecio bello cuado lo vi en formato 3D
+El ruido de perlin: me parecio bello cuado lo vi en formato 3D.
 
 
 * Al combinar diferentes técnicas de aleatoriedad, ¿Cuál fue el mayor desafío? ¿La interacción entre los sistemas, el control de los parámetros, el rendimiento?
+
+en este caso siento que fue mas la parte creativa, porque eran tantas funciones aleatorias que ya no sabia que meterle mas aleatorismo.
+  
 * Si tuvieras que empezar la Actividad 08 de nuevo, ¿Qué harías de manera diferente basándote en lo que sabes ahora?
+
+le agregaria un salto de levi en la funcion del mause y cada ves que se active la probablidad cambien de figura.
