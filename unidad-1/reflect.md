@@ -6,12 +6,6 @@
 Autoevaluación
 Mirando hacia adentro: autoevaluación de conceptos y creación
 
-El objetivo de esta actividad es que recuperes de tu memoria los conceptos fundamentales sobre aleatoriedad y que reflexiones sobre tu propio proceso creativo y de aprendizaje. Al forzarte a recordar sin ver tus notas, fortaleces las conexiones neuronales de lo que has aprendido.
-
-📤 Bitácora
-
-En tu bitácora de aprendizaje. Sin consultar tus apuntes, el editor de código o cualquier otro material, responde con tus propias palabras a las siguientes preguntas. Lo importante es el esfuerzo de recordar, no la perfección.
-
 Parte 1: recuperación de conocimiento (Retrieval Practice)
 
 * Describe la diferencia fundamental entre la aleatoriedad generada por random() y la apariencia de aleatoriedad del Ruido Perlin (noise()). ¿En qué tipo de situación usarías cada una?
@@ -55,6 +49,18 @@ En este caso siento que fue mas la parte creativa, porque eran tantas funciones 
 * Si tuvieras que empezar la Actividad 08 de nuevo, ¿Qué harías de manera diferente basándote en lo que sabes ahora?
 
 le agregaria un salto de levi en la funcion del mouse y cada ves que se active la probabilidad cambien de figura.
+
+### Actividad 10
+
+1. Basándote en la rúbrica para la actividad 08 evalúa el trabajo del compañero y escribe un comentario de retroalimentación constructiva. Esto lo harás en tu bitácora de aprendizaje.
+
+fue un muy bonito concepto y visualmente creía que estaba viendo un estanque con peces, aunque solo fueran bolitas, en clase me comento unos problemas que tuvo con la programación entonces se hizo una autoevaluación, de cómo podría mejorar el movimiento de los peces ya que al ser aleatorio solían acercarse a la piraña
+
+3. Conversa con tu compañero sobre su obra y tu feedback. Escucha sus reflexiones y comparte tus propias ideas.
+
+se conversó en clase, y su concepto me gustó mucho una pecera en donde los hay peces y una piraña que se los intenta comer, ideas que surgieron, que si los peces se comían o se tocaban entre ellos se hicieran más grande, o que si la piraña se comía al otro también se hiciera más grande
+
+
 
 ### Actividad 11
 
