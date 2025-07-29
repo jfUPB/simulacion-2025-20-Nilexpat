@@ -34,7 +34,7 @@ ejemplo  ``position.add(velocity)``
 
 hacer apuntes
   
-* Muestra el código que utilizaste para resolver el ejercicio.
+* Muestra el código que utilizaste para resolver el ejercicio. "https://editor.p5js.org/nicolasparra2024/sketches/11s4QYLCV" 
 
 ```js
 let walker;
