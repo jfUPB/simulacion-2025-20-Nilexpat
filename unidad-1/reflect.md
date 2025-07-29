@@ -64,6 +64,8 @@ Corrección: mi compañero me presento un acuario más interactivo y con la corr
 
 se conversó en clase, y su concepto me gustó mucho una pecera en donde los hay peces y una piraña que se los intenta comer, ideas que surgieron, que si los peces se comían o se tocaban entre ellos se hicieran más grande, o que si la piraña se comía al otro también se hiciera más grande
 
+[Link de la refllexion de mi compañero a mi trabajo](https://github.com/jfUPB/simulacion-2025-20-DannieLudens/edit/unidad1/reflect/unidad-1/reflect.md)
+
 
 
 ### Actividad 11
