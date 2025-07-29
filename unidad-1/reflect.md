@@ -54,7 +54,11 @@ le agregaria un salto de levi en la funcion del mouse y cada ves que se active l
 
 1. Basándote en la rúbrica para la actividad 08 evalúa el trabajo del compañero y escribe un comentario de retroalimentación constructiva. Esto lo harás en tu bitácora de aprendizaje.
 
-fue un muy bonito concepto y visualmente creía que estaba viendo un estanque con peces, aunque solo fueran bolitas, en clase me comento unos problemas que tuvo con la programación entonces se hizo una autoevaluación, de cómo podría mejorar el movimiento de los peces ya que al ser aleatorio solían acercarse a la piraña
+fue un muy bonito concepto y visualmente creía que estaba viendo un estanque con peces, aunque solo fueran bolitas, en clase me comento unos problemas que tuvo con la programación entonces se hizo una autoevaluación, de cómo podría mejorar el movimiento de los peces ya que al ser aleatorio solían acercarse a la piraña.
+
+Corrección: mi compañero me presento un acuario más interactivo y con la corrección de los peces que se movían con un Walker aleatorio ahora se mueven con un perlin noise, la "piraña" se come a un pez y entra en cooldawn, la función interactiva paso de controlar a la piraña a entretenerse darle comida a los peces mientras ellos crecen; la piraña sigue al pez mas grande.
+
+**Mecánicas encontradas: ** si la piraña está persiguiendo un pez grande y luego aparece un pez más grande la piraña cambia de objetivo y empieza perseguir al otro pez.
 
 3. Conversa con tu compañero sobre su obra y tu feedback. Escucha sus reflexiones y comparte tus propias ideas.
 
