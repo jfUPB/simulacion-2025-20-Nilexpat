@@ -116,14 +116,22 @@ que se imprima el resultado de la posicion del vector actual, luego se ejecute l
 
 Estos resultados arrojaron la consola:
 
+``
 p5.Vector Object : [6, 9, 0] 
 p5.Vector Object : [20, 30, 0] 
 Only once 
+``
 
 
 * Recuerda los conceptos de paso por valor y paso por referencia en programación. Muestra ejemplos de este concepto en javascript.
 
+
 segun la IA este es un paso por referencia el cual modifica el valor original dentro del setup, importante tener en cuenta que el programa solo puede hacer esto con un array o un objeto ( en este caso OBJETO), el paso por valor solo crea una copia de un `number`, `boolean`, `string`.
 
 * ¿Qué tipo de paso se está realizando en el código?
+
+Paso por referencia.
+
 * ¿Qué aprendiste?
+
+aprendi en que casos se usa caso por valor y caso por referencia.
