@@ -85,8 +85,45 @@ class Walker {
 
 ###Actividad 03
 
+```js
+let position;
+
+function setup() {
+    createCanvas(400, 400);
+    position = createVector(6,9);
+    console.log(position.toString());
+    playingVector(position);
+    console.log(position.toString());
+    noLoop();
+}
+
+function playingVector(v){
+    v.x = 20;
+    v.y = 30;
+}
+
+function draw() {
+    background(220);
+    console.log("Only once");
+}
+```
+
 * ¿Qué resultado esperas obtener en el programa anterior?
+
+que se imprima el resultado de la posicion del vector actual, luego se ejecute la funcion playing vector y se impriman los nuevos valores del vector position y luego el Only Once.
+  
 * ¿Qué resultado obtuviste?
+
+Estos resultados arrojaron la consola:
+
+p5.Vector Object : [6, 9, 0] 
+p5.Vector Object : [20, 30, 0] 
+Only once 
+
+
 * Recuerda los conceptos de paso por valor y paso por referencia en programación. Muestra ejemplos de este concepto en javascript.
+
+segun la IA este es un paso por referencia el cual modifica el valor original dentro del setup, importante tener en cuenta que el programa solo puede hacer esto con un array o un objeto ( en este caso OBJETO), el paso por valor solo crea una copia de un `number`, `boolean`, `string`.
+
 * ¿Qué tipo de paso se está realizando en el código?
 * ¿Qué aprendiste?
