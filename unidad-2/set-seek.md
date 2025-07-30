@@ -116,11 +116,11 @@ que se imprima el resultado de la posicion del vector actual, luego se ejecute l
 
 Estos resultados arrojaron la consola:
 
-``
+```
 p5.Vector Object : [6, 9, 0] 
 p5.Vector Object : [20, 30, 0] 
 Only once 
-``
+```
 
 
 * Recuerda los conceptos de paso por valor y paso por referencia en programación. Muestra ejemplos de este concepto en javascript.
