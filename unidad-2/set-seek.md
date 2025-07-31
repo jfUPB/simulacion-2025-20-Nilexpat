@@ -190,11 +190,11 @@ let resultado = p5.Vector.dot(v1, v2);
 
 ```
 
-Ahora el mismo periodista curioso de antes te pregunta si le puedes dar una intuición geométrica acerca del producto cruz. Entonces te pregunta ¿Cuál es la interpretación geométrica del producto cruz de dos vectores? Tu respuesta debe incluir qué pasa con la orientación y la magnitud del vector resultante.
+* Ahora el mismo periodista curioso de antes te pregunta si le puedes dar una intuición geométrica acerca del producto cruz. Entonces te pregunta ¿Cuál es la interpretación geométrica del producto cruz de dos vectores? Tu respuesta debe incluir qué pasa con la orientación y la magnitud del vector resultante.
 
 ¿Para que te puede servir el método dist()?
 
-Calcula la distancia entre dos puntos representados como vectores.
+Para calcular la distancia entre dos puntos representados como vectores.
 
 Las coordenadas de un punto en el espacio pueden ser representadas por las componentes de un vector que se extiende del origen hasta el punto.
 
@@ -202,4 +202,6 @@ La versión estática de `dist()`, como en ``p5.Vector.dist(v1, v2)``, equivale 
 
 dist() permite calcular la distancia entre dos puntos utilizando sus coordenadas, como en ``dist(x1, y1, x2, y2).``
 
-¿Para qué sirven los métodos normalize() y limit()?
+* ¿Para qué sirven los métodos normalize() y limit()?
+
+Como se habia dicho anterior mente el metodo normalize() cambia la magnitud del vector mas no la direccion, mientras que el metodo limit() limita la magnitud de un vector a el valor que yo diga esto sirve para controlar la fuerza y la velocidad de un vector.
