@@ -358,10 +358,42 @@ El objetivo de programar el movimiento es idear un algoritmo para calcular la ac
 Para investigador el significado de esta frase te propone que construyas un experimento donde analices cómo se comporta un objeto en movimiento con:
 
 * Aceleración constante.
+
+  Primero creamos un nuevo vector llamado acceleration ` this.velocity = createVector( 0.02, 0.02);`. Aqui es importante tener en cuenta que para hacer una aceleracion hay que sumarle a la velocidad la aceleracion `this.velocity.add(this.acceleration);`. 
+
+``` js
+  class Mover {
+  constructor() {
+    this.position = createVector(random(width), random(height));
+    this.velocity = createVector(random(0.02, 0.02);
+    this.acceleration = createVector(random(-0.01, 0.01), random(-0.01, 0.01));
+  }
+
+  update() {
+    this.velocity.add(this.acceleration);
+    this.position.add(this.velocity);
+  }
+  ```
   
 "https://editor.p5js.org/nicolasparra2024/sketches/yAuJLtUkq"
   
 * Aceleración aleatoria.
+
+  Aqui pasa lo mimos que en la aceleracion normar pero se cambian la variables del vector por unas aleatorias `this.velocity = createVector(random(-2, 2), random(-2, 2));`
+
+  ``` js
+  class Mover {
+  constructor() {
+    this.position = createVector(random(width), random(height));
+    this.velocity = createVector(random(-2, 2), random(-2, 2));
+    this.acceleration = createVector(random(-0.01, 0.01), random(-0.01, 0.01));
+  }
+
+  update() {
+    this.velocity.add(this.acceleration);
+    this.position.add(this.velocity);
+  }
+  ```
 
 "https://editor.p5js.org/nicolasparra2024/sketches/D9pd0HDmy"
   
