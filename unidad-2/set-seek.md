@@ -241,15 +241,47 @@ function drawArrow(base, vec, myColor) {
 
 ```
 
-LINK del codigo que se modificara para hacer lo que se pide:
-"https://editor.p5js.org/nicolasparra2024/sketches/Tpc_TRfOP"
 
-El código que genera el resultado que te pedí.
+
+* El código que genera el resultado que te pedí.
+
+  LINK del codigo que se modificara para hacer lo que se pide:
+ "https://editor.p5js.org/nicolasparra2024/sketches/Tpc_TRfOP"
+
+ 
+
+
 
 * ¿Cómo funciona lerp() y lerpColor().
 
+  `lerp()` funciona como un interpolador de dos angulos que perimite rastrear paso a paso la ruta que le toma para estar en cada punto, en su funcion se definen los dos angunlos y yn angulo que va de 0 a 1 entre ellos, si se pasa de estos limites se extrapola y en consecuencia se hace mas largo la flecha que muestra el recorrido.
+
+  `lerpColor()` es una función que interpola entre dos colores, es decir, crea un color intermedio entre color1 y color2, según un valor de porcentaje (amt) entre 0 y 1.
+
+
+
+
+
 * ¿Cómo se dibuja una flecha usando drawArrow()?
 
+esta funcion acoge los tatos suministrados en el draw de la funcion drawArrow (punto de origen, la punta de la fleccha, el color de la flecha)
+
+``` js
+
+function drawArrow(base, vec, myColor) {
+    push();
+    stroke(myColor);
+    strokeWeight(3);
+    fill(myColor);
+    translate(base.x, base.y);
+    line(0, 0, vec.x, vec.y);
+    rotate(vec.heading());
+    let arrowSize = 7; // grosor de la flecha
+    translate(vec.mag() - arrowSize, 0);
+    triangle(0, arrowSize / 2, 0, -arrowSize / 2, arrowSize, 0);
+    pop();
+}
+```
 
 
 
