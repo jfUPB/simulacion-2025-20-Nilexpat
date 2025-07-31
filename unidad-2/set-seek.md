@@ -332,7 +332,7 @@ function drawArrow(base, vec, myColor) {
 ```
 
 
-###Actividad 06
+### Actividad 06
 
 * Cuál es el concepto del marco motion 101 y cómo se interpreta geométricamente.
 
@@ -346,4 +346,21 @@ luego se crea una variables `let mover`;
 
 se llama a la varible en el `setup()` como -->   `mover = new Mover();`
 
+### Actividad 07
+
+Experimentando con la aceleración
+En el libro proponen una regla (que eventualmente se rompe cuando conviene):
+
+El objetivo de programar el movimiento es idear un algoritmo para calcular la aceleración y luego dejar que el efecto de goteo haga su magia.
+
+<img width="721" height="599" alt="image" src="https://github.com/user-attachments/assets/fcbb7dd3-2132-4fe5-b56a-bb8af5c93afa" />
+
+Para investigador el significado de esta frase te propone que construyas un experimento donde analices cómo se comporta un objeto en movimiento con:
+
+* Aceleración constante.
+  
+"https://editor.p5js.org/nicolasparra2024/sketches/yAuJLtUkq"
+  
+* Aceleración aleatoria.
+* Aceleración hacia el mouse.
 
