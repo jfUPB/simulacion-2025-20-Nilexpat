@@ -134,4 +134,72 @@ Paso por referencia.
 
 * ¿Qué aprendiste?
 
-aprendi en que casos se usa caso por valor y caso por referencia.
+Aprendi en que casos se usa caso por valor y caso por referencia.
+
+###Actividad 04
+
+
+* ¿Para qué sirve el método mag()? Nota que hay otro método llamado magSq(). ¿Cuál es la diferencia entre ambos? ¿Cuál es más eficiente?
+
+* **mag**
+
+Calcula la magnitud (longitud) del vector.
+
+mag() permite calcular la magnitud de un vector bidimensional usando sus componentes, como en mag(x, y).
+
+* **magSq**
+
+Calcula la magnitud (longitud) al cuadrado del vector.( En la operacion no saca la raiz cuadrada)
+
+**¿Cuál es más eficiente?:** magSq ya que este No usa sqrt(), que es una operación costosa
+
+* ¿Para qué sirve el método normalize()?
+
+  normalize escala las componentes de un objeto p5.Vector para que su magnitud sea 1.
+
+  la version estatica de normalize(), como en ``p5.Vector.normalize(v)``, devuelve un nuevo objeto p5.Vector sin cambiar el original.
+
+  Usa normalize() cuando:
+
+* Te importa solo la dirección de un vector.
+
+* Quieres aplicar una velocidad, fuerza o desplazamiento constante en esa dirección.
+
+* Estás generando patrones radiales o controlados visualmente.
+
+* Te encuentras con un periodista en la calle y te pregunta ¿Para qué sirve el método dot()? ¿Qué le responderías en un frase? 
+
+para calcular el producto punto de dos vectores.
+
+* El método dot() tiene una versión estática y una de instancia. ¿Cuál es la diferencia entre ambas?
+
+**Instancia:** multiplica unsando el producto punto dos vectores como se muestra en el ejemplo
+
+```js
+let v1 = createVector(1, 2);
+let v2 = createVector(3, 4);
+let resultado = v1.dot(v2);
+
+```
+
+**Estatica:** Calcula el producto punto entre v1 y v2 desde la clase p5.Vector, sin necesidad de usar un vector en particular.
+```js
+let v1 = createVector(1, 2);
+let v2 = createVector(3, 4);
+let resultado = p5.Vector.dot(v1, v2);
+
+```
+
+Ahora el mismo periodista curioso de antes te pregunta si le puedes dar una intuición geométrica acerca del producto cruz. Entonces te pregunta ¿Cuál es la interpretación geométrica del producto cruz de dos vectores? Tu respuesta debe incluir qué pasa con la orientación y la magnitud del vector resultante.
+
+¿Para que te puede servir el método dist()?
+
+Calcula la distancia entre dos puntos representados como vectores.
+
+Las coordenadas de un punto en el espacio pueden ser representadas por las componentes de un vector que se extiende del origen hasta el punto.
+
+La versión estática de `dist()`, como en ``p5.Vector.dist(v1, v2)``, equivale a llamar ``v1.dist(v2)``.
+
+dist() permite calcular la distancia entre dos puntos utilizando sus coordenadas, como en ``dist(x1, y1, x2, y2).``
+
+¿Para qué sirven los métodos normalize() y limit()?
