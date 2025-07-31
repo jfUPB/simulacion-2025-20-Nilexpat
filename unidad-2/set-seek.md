@@ -4,7 +4,7 @@
 
 ##APUNTES
 
-###Actividad 01
+### Actividad 01
 
 * ¿Cómo funciona la suma dos vectores en p5.js?
 
@@ -30,7 +30,7 @@ como hacer para que un vector no se salga de los bordes, este ejemplo da una ilu
 ejemplo  ``position.add(velocity)``
 
 
-###Actividad 02
+### Actividad 02
 
 * ¿Qué tuviste que hacer para hacer la conversión propuesta?
 
@@ -83,7 +83,7 @@ class Walker {
 ```
 
 
-###Actividad 03
+### Actividad 03
 
 ```js
 let position;
@@ -136,7 +136,7 @@ Paso por referencia.
 
 Aprendi en que casos se usa caso por valor y caso por referencia.
 
-###Actividad 04
+### Actividad 04
 
 
 * ¿Para qué sirve el método mag()? Nota que hay otro método llamado magSq(). ¿Cuál es la diferencia entre ambos? ¿Cuál es más eficiente?
@@ -206,8 +206,6 @@ dist() permite calcular la distancia entre dos puntos utilizando sus coordenadas
 
 Como se habia dicho anterior mente el metodo normalize() cambia la magnitud del vector mas no la direccion, mientras que el metodo limit() limita la magnitud de un vector a el valor que yo diga esto sirve para controlar la fuerza y la velocidad de un vector.
 
-###Actividad 5
-
 ``` js
 function setup() {
     createCanvas(100, 100);
@@ -241,6 +239,8 @@ function drawArrow(base, vec, myColor) {
 
 ```
 
+
+### Actividad 05
 
 
 * El código que genera el resultado que te pedí.
@@ -331,5 +331,19 @@ function drawArrow(base, vec, myColor) {
 }
 ```
 
+
+###Actividad 06
+
+* Cuál es el concepto del marco motion 101 y cómo se interpreta geométricamente.
+
+Es crear una clase Mover que contiene dos (vectores posicion y velocidad) geometricamente no se. yo observo un objeto que se mueve en una direccrion que tiene limimites, y luego se transporta al lado opuesto sin hacer ningun rebote por las paredes.
+ 
+* ¿Cómo se aplica motion 101 en el ejemplo?
+
+se crea una clase `Mover`, se agregan funsiones que seran usadas en el `draw()` por la clase Mover como (`Update(),Show() y checkEdge()`).
+
+luego se crea una variables `let mover`; 
+
+se llama a la varible en el `setup()` como -->   `mover = new Mover();`
 
 
