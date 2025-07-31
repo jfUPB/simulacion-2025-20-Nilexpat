@@ -380,6 +380,7 @@ Para investigador el significado de esta frase te propone que construyas un expe
 * Aceleración aleatoria.
 
   Aqui pasa lo mimos que en la aceleracion normar pero se cambian la variables del vector por unas aleatorias `this.velocity = createVector(random(-2, 2), random(-2, 2));`
+otra orma de hacerlo;   `this.acceleration.mult(random(2));`
 
   ``` js
   class Mover {
@@ -399,3 +400,14 @@ Para investigador el significado de esta frase te propone que construyas un expe
   
 * Aceleración hacia el mouse.
 
+
+
+### Actividad 08
+
+* Describe el concepto de tu obra generativa.
+* ¿Cómo piensas aplicar el marco MOTION 101 y por qué?
+* ¿Qué algoritmo de aceleración vas a utilizar? ¿Por qué?
+* El contenido generado debe ser interactivo. Puedes utilizar mouse, teclado, cámara, micrófono, etc, para variar los parámetros del algoritmo en tiempo real.
+* El código de la aplicación.
+* Un enlace al proyecto en el editor de p5.js.
+* Una captura de pantalla representativa de tu pieza de arte generativo.
