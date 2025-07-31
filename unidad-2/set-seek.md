@@ -362,5 +362,8 @@ Para investigador el significado de esta frase te propone que construyas un expe
 "https://editor.p5js.org/nicolasparra2024/sketches/yAuJLtUkq"
   
 * Aceleración aleatoria.
+
+"https://editor.p5js.org/nicolasparra2024/sketches/D9pd0HDmy"
+  
 * Aceleración hacia el mouse.
 
