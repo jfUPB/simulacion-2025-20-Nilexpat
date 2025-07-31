@@ -205,3 +205,51 @@ dist() permite calcular la distancia entre dos puntos utilizando sus coordenadas
 * ¿Para qué sirven los métodos normalize() y limit()?
 
 Como se habia dicho anterior mente el metodo normalize() cambia la magnitud del vector mas no la direccion, mientras que el metodo limit() limita la magnitud de un vector a el valor que yo diga esto sirve para controlar la fuerza y la velocidad de un vector.
+
+###Actividad 5
+
+``` js
+function setup() {
+    createCanvas(100, 100);
+}
+
+function draw() {
+    background(200);
+
+    let v0 = createVector(50, 50);
+    let v1 = createVector(30, 0);
+    let v2 = createVector(0, 30);
+    let v3 = p5.Vector.lerp(v1, v2, 0.5);
+    drawArrow(v0, v1, 'red');
+    drawArrow(v0, v2, 'blue');
+    drawArrow(v0, v3, 'purple');
+}
+
+function drawArrow(base, vec, myColor) {
+    push();
+    stroke(myColor);
+    strokeWeight(3);
+    fill(myColor);
+    translate(base.x, base.y);
+    line(0, 0, vec.x, vec.y);
+    rotate(vec.heading());
+    let arrowSize = 7;
+    translate(vec.mag() - arrowSize, 0);
+    triangle(0, arrowSize / 2, 0, -arrowSize / 2, arrowSize, 0);
+    pop();
+}
+
+```
+
+LINK del codigo que se modificara para hacer lo que se pide:
+"https://editor.p5js.org/nicolasparra2024/sketches/Tpc_TRfOP"
+
+El código que genera el resultado que te pedí.
+
+* ¿Cómo funciona lerp() y lerpColor().
+
+* ¿Cómo se dibuja una flecha usando drawArrow()?
+
+
+
+
