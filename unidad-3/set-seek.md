@@ -104,13 +104,88 @@ function draw() {
 }
 
 ```
-link del experimento: https://editor.p5js.org/nicolasparra2024/sketches/jwADJu0qE
+link del experimento: (https://editor.p5js.org/nicolasparra2024/sketches/jwADJu0qE)
 
 * Explica cómo modelaste cada fuerza.
 
   Se aplico 101 y tambien una funcion de MouseIspressed que rastrea la posicion del mouse y aplica una fuerza contraria en el balon.
   
 * Atracción gravitacional.
+
+mover.js
+```js
+
+class Body {
+  constructor(x, y) {
+    this.position = createVector(x, y);
+    this.velocity = createVector(0, 0);
+    this.acceleration = createVector(0, 0);
+    this.mass = 10;
+    this.r = sqrt(this.mass) * 2;
+  }
+  
+  attract(body) {
+    let force = p5.Vector.sub(this.position, body.position);
+    let d = constrain(force.mag(), 25, 25);
+
+    // Si el mouse está presionado aumentamos la gravedad
+    let G = mouseIsPressed ? 5 : 1;  // <-- aquí cambiamos la fuerza (5x más fuerte al hacer click)
+
+    let strength = (G * (this.mass * body.mass)) / (d * d);
+    force.setMag(strength);
+    body.applyForce(force);
+  }
+
+  applyForce(force) {
+    let f = p5.Vector.div(force, this.mass);
+    this.acceleration.add(f);
+  }
+
+  update() {
+    this.velocity.add(this.acceleration);
+    this.position.add(this.velocity);
+    this.acceleration.set(0, 0);
+  }
+
+  show() {
+    stroke(250);
+    strokeWeight(2);
+    fill(250, 500);
+    circle(this.position.x, this.position.y, this.r * 4);
+  }
+}
+
+```
+sketch.js
+```js
+
+let bodyA;
+let bodyB;
+
+let G = 1;
+
+function setup() {
+  createCanvas(640, 250);
+  bodyA = new Body(320, 40);
+  bodyB = new Body(320, 200);
+  bodyA.velocity = createVector(1, 0);
+  bodyB.velocity = createVector(-1, 0);
+}
+
+function draw() {
+  background(25,0,0,5);
+
+  bodyA.attract(bodyB);
+  bodyB.attract(bodyA);
+
+  bodyA.update();
+  bodyA.show();
+  bodyB.update();
+  bodyB.show();
+}
+
+```
+link: (https://editor.p5js.org/nicolasparra2024/sketches/CNrxCSMM1)
 * Explica cómo modelaste cada fuerza.
 
   
@@ -121,4 +196,5 @@ link del experimento: https://editor.p5js.org/nicolasparra2024/sketches/jwADJu0q
   
 * Copia el código.
 * Captura una imagen representativa de tu ejemplo.
+
 
