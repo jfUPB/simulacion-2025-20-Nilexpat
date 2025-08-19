@@ -104,10 +104,21 @@ function draw() {
 }
 
 ```
+link del experimento: https://editor.p5js.org/nicolasparra2024/sketches/jwADJu0qE
+
+* Explica cómo modelaste cada fuerza.
+
+  Se aplico 101 y tambien una funcion de MouseIspressed que rastrea la posicion del mouse y aplica una fuerza contraria en el balon.
   
 * Atracción gravitacional.
 * Explica cómo modelaste cada fuerza.
+
+  
 * Conceptualmente cómo se relaciona la fuerza con la obra generativa.
 * Copia el enlace a tu ejemplo en p5.js.
+* Copia el enlace a tu ejemplo en p5.js.
+
+  
 * Copia el código.
 * Captura una imagen representativa de tu ejemplo.
+
