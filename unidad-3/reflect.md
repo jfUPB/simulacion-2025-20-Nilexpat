@@ -20,7 +20,7 @@ El paso por valor es una copia de la memoria del objeto original y el paso por r
 
 * ¿Cuál es la diferencia conceptual entre modelar fuerzas (como fricción, gravedad) y simplemente definir algoritmos de aceleración?
 
-
+no se
 
 * Parte 2: reflexión sobre tu proceso (Metacognición)
 
@@ -30,7 +30,8 @@ El paso por valor es una copia de la memoria del objeto original y el paso por r
   
 * ¿Las fuerzas que modelaste produjeron el comportamiento que esperabas? Describe un momento “sorpresa” (esperado o inesperado) durante el desarrollo.
 
-Me puese a modificar un codigo 
+Me puese a jugar con el codigo del libro y en eso altere la constante gravitacional, y me recordaba cuando uno daba comida a los peces, ese fue el punto de partida del codigo que hice.
   
 * ¿Cómo ha cambiado tu forma de pensar sobre la “física” en el arte generativo después de esta unidad?
 Si tuvieras una semana más, ¿Qué otras fuerzas te gustaría modelar o cómo mejorarías tu simulación del problema de los n-cuerpos?
+
