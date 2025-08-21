@@ -84,10 +84,54 @@ function mousePressed() {
 
 **Mover.js**
 ```js
+class Mover {
+  constructor(x, y, vx, vy, m) {
+    this.pos = createVector(x, y);
+    this.vel = createVector(vx, vy);
+    this.acc = createVector(0, 0);
+    this.mass = m;
+    this.r = sqrt(this.mass) * 1;
+  }
 
+  applyForce(force) {
+    let f = p5.Vector.div(force, this.mass);
+    this.acc.add(f);
+  }
+
+  attract(mover) {
+    let force = p5.Vector.sub(this.pos, mover.pos);
+    let distanceSq = constrain(force.magSq(), 100, 100);
+    let strength = (G * (this.mass * mover.mass)) / distanceSq;
+    force.setMag(strength);
+    mover.applyForce(force);
+  }
+  
+ seek(target) {
+  let force = p5.Vector.sub(target, this.pos);
+  force.setMag(0.5 * G); // más fuerte si G sube
+  this.applyForce(force);
+}
+
+  
+  update() {
+    this.vel.add(this.acc);
+    this.pos.add(this.vel);
+    this.acc.set(0, 0);
+  }
+  
+ 
+
+  show() {
+    stroke(0);
+    strokeWeight(0);
+    fill(150, 250,250,50);
+    ellipse(this.pos.x, this.pos.y, this.r * 2);
+  }
+}
 ```
 Captura una imagen representativa de tu ejemplo.
 
 link: https://editor.p5js.org/nicolasparra2024/sketches/bk2jfWQIs
+
 
 
