@@ -5,11 +5,11 @@
 
 Diseña e implementa tu obra generativa interactiva en tiempo real.
 
-[x] Debe ser interactiva.
+- [x] Debe ser interactiva.
   
-[ ] Debes usar al menos dos algoritmos diferentes de la unidad 1, además de random.
+- [ ] Debes usar al menos dos algoritmos diferentes de la unidad 1, además de random.
 
-[x]Explica cómo modelaste el problema de los n-cuerpos en tu obra.
+- [x] Explica cómo modelaste el problema de los n-cuerpos en tu obra.
 
 ""Explicacion:"" Es un lago de peces en donde te sentaras a darle comida a los peces mientras pasas el tiempo pensando de la vida.
 
@@ -26,3 +26,4 @@ Copia el código.
 Captura una imagen representativa de tu ejemplo.
 
 link: https://editor.p5js.org/nicolasparra2024/sketches/bk2jfWQIs
+
