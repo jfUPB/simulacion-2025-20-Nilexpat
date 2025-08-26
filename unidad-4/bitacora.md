@@ -14,6 +14,10 @@ Porque cada vez que se oprime una tecla se aumenta el angulo, entonces la posici
 
 La funcion rotate, rota el lienzo en el angulo señalado.
 
+Observa que al dibujar los elementos gráficos parece que se está dibujando en la posición (0, 0) del sistema de coordenadas. ¿Por qué crees que se hace esto? y ¿Por qué aunque en cada frame se hace lo mismo, los elementos gráficos rotan?
+
+**RTA:** Porque la funcion `trasnlate()` ubica el origen de la creacion de los objetos en el centro del lienzo, siempre esta en el centro porque esa es la instruccion que se le dio en el draw y rota porque la varible `angle` es global entonces se modifica en cada interaccion.
+
 ## Explicación conceptual de la obra
 
 * ¿Qué concepto de la unidad 4 y cómo lo aplicaste en la obra?
@@ -47,6 +51,7 @@ La funcion rotate, rota el lienzo en el angulo señalado.
 ```
 
 ## Captura de pantalla representativa
+
 
 
 
