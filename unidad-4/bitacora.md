@@ -2,6 +2,8 @@
 
 ## Actividad 02
 
+### Parte 1
+
 * ¿Qué está pasando en esta simulación? ¿Cuál es la interacción?
 
 El objeto esta rotando cuando se oprime una tecla
@@ -17,6 +19,15 @@ La funcion rotate, rota el lienzo en el angulo señalado.
 Observa que al dibujar los elementos gráficos parece que se está dibujando en la posición (0, 0) del sistema de coordenadas. ¿Por qué crees que se hace esto? y ¿Por qué aunque en cada frame se hace lo mismo, los elementos gráficos rotan?
 
 **RTA:** Porque la funcion `trasnlate()` ubica el origen de la creacion de los objetos en el centro del lienzo, siempre esta en el centro porque esa es la instruccion que se le dio en el draw y rota porque la varible `angle` es global entonces se modifica en cada interaccion.
+
+
+
+### Parte 2
+Ahora analiza una simulación que muestra cómo puedes hacer para que los elementos gráficos de la simulación apunten en la dirección del movimiento.
+
+Identifica el marco motion 101. ¿Qué es lo que se está haciendo en este marco?
+
+Funciona como un marco normal 101 la interaccion del objeto es seguir el mouse.
 
 ## Explicación conceptual de la obra
 
@@ -51,6 +62,7 @@ Observa que al dibujar los elementos gráficos parece que se está dibujando en 
 ```
 
 ## Captura de pantalla representativa
+
 
 
 
