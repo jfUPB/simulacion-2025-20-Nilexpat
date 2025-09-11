@@ -15,7 +15,25 @@ Además te pediré que hagas los siguientes experimentos y los reportes en tu bi
 
 ### Ejercicio 1
 
-En este primer ejemplo las particulas se crean por medio de una matriz la cual lee la matriz de atras hacia delante, esto para que no cause error a la hora de iterar(recorrer la matriz), para modificar una matriz hay que tener encuanta la funcion splice y lo que hace cada uno de sus parametros ´´array.splice(inicio, cantidad, item1, item2, ...);´´
+1.
+
+2. En este primer ejemplo las particulas se crean por medio de una matriz la cual lee la matriz de atras hacia delante, esto para que no cause error a la hora de iterar(recorrer la matriz), para modificar una matriz hay que tener encuanta la funcion splice y lo que hace cada uno de sus parametros `` array.splice(punto de partida del array, cantidad de elemtos que vas a eliminas, agregar item1,agregar item2, ...); ``.
+
+### Ejercicio 2
+ 
+Que con cada click las particulas cabien aleatoriamente (polimorfismo).
+
+### Ejercicio 3
+
+agregar nuevas formas.
+
+### Ejercicio 4
+
+Que exista una fuerza de viento que impulse las particulas hacia arriba.
+
+### Ejercicio 5
+
+que el suelo sea una superficie que perimita que todas la bolitas reboten y tengan colores aleatorios.
 
 ## actividad 3
 
@@ -31,4 +49,5 @@ Es unidad incluye una novedad: DISEÑO. Debes intencionar tu obra. Esta vez te p
 * Incluye un enlace a tu código en el editor de p5.js.
 * Incluye el código fuente.
 * Captura de pantallas de tu obra con las imágenes que más te gusten
+
 
