@@ -13,6 +13,10 @@ Además te pediré que hagas los siguientes experimentos y los reportes en tu bi
 * Incluye el código fuente de cada una de las simulaciones.
 * Captura de pantallas de cada una de las simulaciones con las imágenes que más te gusten como resultado de la ejecución de cada una de las simulaciones.
 
+### Ejercicio 1
+
+En este primer ejemplo las particulas se crean por medio de una matriz la cual lee la matriz de atras hacia delante, esto para que no cause error a la hora de iterar(recorrer la matriz), para modificar una matriz hay que tener encuanta la funcion splice y lo que hace cada uno de sus parametros ´´array.splice(inicio, cantidad, item1, item2, ...);´´
+
 ## actividad 3
 
 Es hora de una nueva creación. Diseña e implementa una obra de arte generativa algorítmica interactiva en tiempo real en p5.js que cumpla con los siguientes requisitos:
@@ -27,3 +31,4 @@ Es unidad incluye una novedad: DISEÑO. Debes intencionar tu obra. Esta vez te p
 * Incluye un enlace a tu código en el editor de p5.js.
 * Incluye el código fuente.
 * Captura de pantallas de tu obra con las imágenes que más te gusten
+
