@@ -35,6 +35,8 @@ Este define un punto de referencial para facilitar la rotaciond e un objeto en e
   
 * ¿Cuál es la relación entre el ángulo de rotación y el vector de velocidad? Trata de dibujar en un papel el vector de velocidad y cómo se relaciona con el ángulo de rotación y la operación de traslación y rotación.
 
+El vector velocidad indica alobjeto donde se encuentra el mause, el objeto siempre se esta transladando y el heading transforma el angulo en radianes y le manda esa informacion a rotacion paraque el vector velocidad apunte hacia el mause.
+
 
 
 ## Explicación conceptual de la obra
@@ -70,6 +72,7 @@ Este define un punto de referencial para facilitar la rotaciond e un objeto en e
 ```
 
 ## Captura de pantalla representativa
+
 
 
 
