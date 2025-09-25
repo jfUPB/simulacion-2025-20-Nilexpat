@@ -5,6 +5,18 @@
 ## Exploración Actividad 2
 
 
+* ¿Qué está pasando en esta simulación? ¿Cuál es la interacción?
+
+Una vara rota cada vez que se le oprime espacio 
+
+
+* Nota que en cada frame se está trasladando el origen del sistema de coordenadas al centro de la pantalla. ¿Por qué crees que se hace esto?
+porque la persona que lo dibujo, creo el objeto en las cordenadad 0,0 que en el canva es la cordenada empieza dedsde la esquina superior izquierda. por ello utuliza translade para que siempre se dibuje en el centro.
+
+
+* Cuál es la relación entre el sistema de coordenadas y la función rotate().
+
+
 ## Explicación conceptual de la obra
 
 * ¿Qué concepto de la unidad 4 y cómo lo aplicaste en la obra?
@@ -38,6 +50,7 @@
 ```
 
 ## Captura de pantalla representativa
+
 
 
 
