@@ -15,24 +15,96 @@ Además te pediré que hagas los siguientes experimentos y los reportes en tu bi
 
 ### Ejercicio 1
 
+1. las particulas se generan desde el mouse.
+
+2. En este primer ejemplo las particulas se crean por medio de una matriz la cual lee la matriz de atras hacia delante, esto para que no cause error a la hora de iterar(recorrer la matriz), para modificar una matriz hay que tener encuanta la funcion splice y lo que hace cada uno de sus parametros `` array.splice(punto de partida del array, cantidad de elemtos que vas a eliminas, agregar item1,agregar item2, ...); ``.
+3.codigo Fuente.
+
+  ```js
+ let particles = [];
+
+function setup() {
+  createCanvas(600, 400);
+}
+
+function draw() {
+  background(255);
+
+  // Agregar una partícula en la posición del mouse
+  particles.push(new Particle(mouseX, mouseY));
+
+  // Recorremos el array de partículas
+  for (let i = particles.length - 1; i >= 0; i--) {
+    let p = particles[i];
+    p.run();
+    if (p.isDead()) {
+      particles.splice(i, 1); // eliminar partículas muertas
+    }
+  }
+}
+  ```
+4. [link del ejercicio modificado](https://editor.p5js.org/natureofcode/sketches/-xTbGZMim)
+
+### Ejercicio 2
 1.
 
 2. En este primer ejemplo las particulas se crean por medio de una matriz la cual lee la matriz de atras hacia delante, esto para que no cause error a la hora de iterar(recorrer la matriz), para modificar una matriz hay que tener encuanta la funcion splice y lo que hace cada uno de sus parametros `` array.splice(punto de partida del array, cantidad de elemtos que vas a eliminas, agregar item1,agregar item2, ...); ``.
+3.codigo Fuente.
 
-### Ejercicio 2
+  ``js
+  
+
+
+  
+  ``
+4. [link del ejercicio modificado]()
+
  
 Que con cada click las particulas cabien aleatoriamente (polimorfismo).
 
 ### Ejercicio 3
+1.
 
+2. En este primer ejemplo las particulas se crean por medio de una matriz la cual lee la matriz de atras hacia delante, esto para que no cause error a la hora de iterar(recorrer la matriz), para modificar una matriz hay que tener encuanta la funcion splice y lo que hace cada uno de sus parametros `` array.splice(punto de partida del array, cantidad de elemtos que vas a eliminas, agregar item1,agregar item2, ...); ``.
+3.codigo Fuente.
+
+  ``js
+  
+
+
+  
+  ``
+4. [link del ejercicio modificado]()
 agregar nuevas formas.
 
 ### Ejercicio 4
+1.
 
+2. En este primer ejemplo las particulas se crean por medio de una matriz la cual lee la matriz de atras hacia delante, esto para que no cause error a la hora de iterar(recorrer la matriz), para modificar una matriz hay que tener encuanta la funcion splice y lo que hace cada uno de sus parametros `` array.splice(punto de partida del array, cantidad de elemtos que vas a eliminas, agregar item1,agregar item2, ...); ``.
+3.codigo Fuente.
+
+  ``js
+  
+
+
+  
+  ``
+4. [link del ejercicio modificado]()
 Que exista una fuerza de viento que impulse las particulas hacia arriba.
 
 ### Ejercicio 5
+1.
 
+2. En este primer ejemplo las particulas se crean por medio de una matriz la cual lee la matriz de atras hacia delante, esto para que no cause error a la hora de iterar(recorrer la matriz), para modificar una matriz hay que tener encuanta la funcion splice y lo que hace cada uno de sus parametros `` array.splice(punto de partida del array, cantidad de elemtos que vas a eliminas, agregar item1,agregar item2, ...); ``.
+3.codigo Fuente.
+
+  ``js
+  
+
+
+  
+  ``
+4. [link del ejercicio modificado]()
 que el suelo sea una superficie que perimita que todas la bolitas reboten y tengan colores aleatorios.
 
 ## actividad 3
@@ -49,4 +121,5 @@ Es unidad incluye una novedad: DISEÑO. Debes intencionar tu obra. Esta vez te p
 * Incluye un enlace a tu código en el editor de p5.js.
 * Incluye el código fuente.
 * Captura de pantallas de tu obra con las imágenes que más te gusten
+
 
