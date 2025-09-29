@@ -46,10 +46,9 @@ function draw() {
 4. [link del ejercicio modificado](https://editor.p5js.org/natureofcode/sketches/-xTbGZMim)
 
 ### Ejercicio 2
-1.
+1. Que con cada click las particulas cabien aleatoriamente (polimorfismo).
 
-2. En este primer ejemplo las particulas se crean por medio de una matriz la cual lee la matriz de atras hacia delante, esto para que no cause error a la hora de iterar(recorrer la matriz), para modificar una matriz hay que tener encuanta la funcion splice y lo que hace cada uno de sus parametros `` array.splice(punto de partida del array, cantidad de elemtos que vas a eliminas, agregar item1,agregar item2, ...); ``.
-3.codigo Fuente.
+2. En este segundo ejemplo obsevamos que en la ventana o codigo de particulas el tiempo de vidad esta dictado por un contador llamado tiempo de vida el cual va disminuyendo con el paso del y cuando sea menor que 0 se borra la particula.
 
   ``js
   
@@ -59,8 +58,6 @@ function draw() {
   ``
 4. [link del ejercicio modificado]()
 
- 
-Que con cada click las particulas cabien aleatoriamente (polimorfismo).
 
 ### Ejercicio 3
 1.
@@ -121,5 +118,6 @@ Es unidad incluye una novedad: DISEÑO. Debes intencionar tu obra. Esta vez te p
 * Incluye un enlace a tu código en el editor de p5.js.
 * Incluye el código fuente.
 * Captura de pantallas de tu obra con las imágenes que más te gusten
+
 
 
