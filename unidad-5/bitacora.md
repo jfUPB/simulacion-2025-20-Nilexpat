@@ -50,13 +50,65 @@ function draw() {
 
 2. En este segundo ejemplo obsevamos que en la ventana o codigo de particulas el tiempo de vidad esta dictado por un contador llamado tiempo de vida el cual va disminuyendo con el paso del y cuando sea menor que 0 se borra la particula.
 
-  ``js
-  
+ ```js
+  class Particle {
+  constructor(x, y) {
+    this.position = createVector(x, y);
+    this.acceleration = createVector(0, 0);
+    this.velocity = createVector(random(-1, 1), random(-1, 0));
+    this.lifespan = 255.0;
 
+    // Forma aleatoria: "circle", "square" o "triangle"
+    let r = int(random(3));
+    if (r === 0) this.shape = "circle";
+    else if (r === 1) this.shape = "square";
+    else this.shape = "triangle";
+  }
 
-  
-  ``
-4. [link del ejercicio modificado]()
+  run() {
+    let gravity = createVector(0, 0.05);
+    this.applyForce(gravity);
+    this.update();
+    this.show();
+  }
+
+  applyForce(force) {
+    this.acceleration.add(force);
+  }
+
+  update() {
+    this.velocity.add(this.acceleration);
+    this.position.add(this.velocity);
+    this.lifespan -= 2;
+    this.acceleration.mult(0);
+  }
+
+  show() {
+    stroke(0, this.lifespan);
+    strokeWeight(2);
+    fill(127, this.lifespan);
+
+    if (this.shape === "circle") {
+      circle(this.position.x, this.position.y, 12);
+    } else if (this.shape === "square") {
+      rectMode(CENTER);
+      square(this.position.x, this.position.y, 12);
+    } else if (this.shape === "triangle") {
+      push();
+      translate(this.position.x, this.position.y);
+      rotate(PI / 6); // rotar un poco para que no quede plano
+      triangle(-6, 6, 6, 6, 0, -6);
+      pop();
+    }
+  }
+
+  isDead() {
+    return this.lifespan < 0.0;
+  }
+}
+
+  ```
+4. [link del ejercicio modificado](https://editor.p5js.org/nicolasparra2024/sketches/g6VA76FDC)
 
 
 ### Ejercicio 3
@@ -80,13 +132,65 @@ agregar nuevas formas.
 2. En este primer ejemplo las particulas se crean por medio de una matriz la cual lee la matriz de atras hacia delante, esto para que no cause error a la hora de iterar(recorrer la matriz), para modificar una matriz hay que tener encuanta la funcion splice y lo que hace cada uno de sus parametros `` array.splice(punto de partida del array, cantidad de elemtos que vas a eliminas, agregar item1,agregar item2, ...); ``.
 3.codigo Fuente.
 
-  ``js
-  
+  ```js
+  class Particle {
+  constructor(x, y) {
+    this.position = createVector(x, y);
+    this.acceleration = createVector(0, 0);
+    this.velocity = createVector(random(-1, 1), random(-1, 0));
+    this.lifespan = 255.0;
 
+    // Forma aleatoria: "circle", "square" o "triangle"
+    let r = int(random(3));
+    if (r === 0) this.shape = "circle";
+    else if (r === 1) this.shape = "square";
+    else this.shape = "triangle";
+  }
 
-  
-  ``
-4. [link del ejercicio modificado]()
+  run() {
+    let gravity = createVector(0, 0.05);
+    this.applyForce(gravity);
+    this.update();
+    this.show();
+  }
+
+  applyForce(force) {
+    this.acceleration.add(force);
+  }
+
+  update() {
+    this.velocity.add(this.acceleration);
+    this.position.add(this.velocity);
+    this.lifespan -= 2;
+    this.acceleration.mult(0);
+  }
+
+  show() {
+    stroke(0, this.lifespan);
+    strokeWeight(2);
+    fill(127, this.lifespan);
+
+    if (this.shape === "circle") {
+      circle(this.position.x, this.position.y, 12);
+    } else if (this.shape === "square") {
+      rectMode(CENTER);
+      square(this.position.x, this.position.y, 12);
+    } else if (this.shape === "triangle") {
+      push();
+      translate(this.position.x, this.position.y);
+      rotate(PI / 6); // rotar un poco para que no quede plano
+      triangle(-6, 6, 6, 6, 0, -6);
+      pop();
+    }
+  }
+
+  isDead() {
+    return this.lifespan < 0.0;
+  }
+}
+
+  ```
+4. [link del ejercicio modificado](https://editor.p5js.org/nicolasparra2024/sketches/g6VA76FDC)
 Que exista una fuerza de viento que impulse las particulas hacia arriba.
 
 ### Ejercicio 5
@@ -118,6 +222,7 @@ Es unidad incluye una novedad: DISEÑO. Debes intencionar tu obra. Esta vez te p
 * Incluye un enlace a tu código en el editor de p5.js.
 * Incluye el código fuente.
 * Captura de pantallas de tu obra con las imágenes que más te gusten
+
 
 
 
