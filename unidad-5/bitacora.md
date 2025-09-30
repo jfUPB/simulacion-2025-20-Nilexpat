@@ -114,7 +114,25 @@ function draw() {
 ### Ejercicio 3
 1.agregar nuevas formas.
 
-2. En este primer ejemplo las particulas se crean por medio de una matriz la cual lee la matriz de atras hacia delante, esto para que no cause error a la hora de iterar(recorrer la matriz), para modificar una matriz hay que tener encuanta la funcion splice y lo que hace cada uno de sus parametros `` array.splice(punto de partida del array, cantidad de elemtos que vas a eliminas, agregar item1,agregar item2, ...); ``.
+2. Procederemos a desglosar el código para entender lo que hace, ya que visualmente se parece al ejercicio anterior, pero su forma de optimizar la memoria es diferente.
+Primero vemos que existe una función llamada run, la cual recorre un arreglo de partículas. Al observar mejor el código, notamos que en el archivo particula.js ya se define un tiempo de vida para cada partícula. Sin embargo, no nos vamos a quedar con la duda de qué es lo que hace esta función y por qué recorre un arreglo para luego comprobar si la partícula está muerta o no.
+
+   Este metodo recorre la lista de atras hacia delante y se encarga de eliminar de la lista las particulas que ya murieron ``this.particles.sdplice(i,1);``.
+
+```js
+  run() {
+    for (let i = this.particles.length - 1; i >= 0; i--) {
+      let p = this.particles[i];
+      p.run();
+      if (p.isDead()) {
+        this.particles.splice(i, 1);
+      }
+    }
+  }
+}
+```
+
+
 3.codigo Fuente.
 
   ```js
@@ -162,86 +180,31 @@ function draw() {
 4. [link del ejercicio modificado](https://editor.p5js.org/natureofcode/sketches/2ZlNJp2EW)
 
 ### Ejercicio 4
-1.
+1.Que exista una fuerza de viento que impulse las particulas hacia arriba.
 
 2. En este primer ejemplo las particulas se crean por medio de una matriz la cual lee la matriz de atras hacia delante, esto para que no cause error a la hora de iterar(recorrer la matriz), para modificar una matriz hay que tener encuanta la funcion splice y lo que hace cada uno de sus parametros `` array.splice(punto de partida del array, cantidad de elemtos que vas a eliminas, agregar item1,agregar item2, ...); ``.
 3.codigo Fuente.
 
   ```js
-  class Particle {
-  constructor(x, y) {
-    this.position = createVector(x, y);
-    this.acceleration = createVector(0, 0);
-    this.velocity = createVector(random(-1, 1), random(-1, 0));
-    this.lifespan = 255.0;
-
-    // Forma aleatoria: "circle", "square" o "triangle"
-    let r = int(random(3));
-    if (r === 0) this.shape = "circle";
-    else if (r === 1) this.shape = "square";
-    else this.shape = "triangle";
-  }
-
-  run() {
-    let gravity = createVector(0, 0.05);
-    this.applyForce(gravity);
-    this.update();
-    this.show();
-  }
-
-  applyForce(force) {
-    this.acceleration.add(force);
-  }
-
-  update() {
-    this.velocity.add(this.acceleration);
-    this.position.add(this.velocity);
-    this.lifespan -= 2;
-    this.acceleration.mult(0);
-  }
-
-  show() {
-    stroke(0, this.lifespan);
-    strokeWeight(2);
-    fill(127, this.lifespan);
-
-    if (this.shape === "circle") {
-      circle(this.position.x, this.position.y, 12);
-    } else if (this.shape === "square") {
-      rectMode(CENTER);
-      square(this.position.x, this.position.y, 12);
-    } else if (this.shape === "triangle") {
-      push();
-      translate(this.position.x, this.position.y);
-      rotate(PI / 6); // rotar un poco para que no quede plano
-      triangle(-6, 6, 6, 6, 0, -6);
-      pop();
-    }
-  }
-
-  isDead() {
-    return this.lifespan < 0.0;
-  }
-}
+ 
 
   ```
-4. [link del ejercicio modificado](https://editor.p5js.org/nicolasparra2024/sketches/g6VA76FDC)
-Que exista una fuerza de viento que impulse las particulas hacia arriba.
+4. [link del ejercicio modificado]()
+
 
 ### Ejercicio 5
-1.
+
+1.Que el suelo sea una superficie que perimita que todas la bolitas reboten y tengan colores aleatorios.
 
 2. En este primer ejemplo las particulas se crean por medio de una matriz la cual lee la matriz de atras hacia delante, esto para que no cause error a la hora de iterar(recorrer la matriz), para modificar una matriz hay que tener encuanta la funcion splice y lo que hace cada uno de sus parametros `` array.splice(punto de partida del array, cantidad de elemtos que vas a eliminas, agregar item1,agregar item2, ...); ``.
 3.codigo Fuente.
 
-  ``js
-  
+  ```js
+ 
 
-
-  
-  ``
+  ```
 4. [link del ejercicio modificado]()
-que el suelo sea una superficie que perimita que todas la bolitas reboten y tengan colores aleatorios.
+
 
 ## actividad 3
 
@@ -257,6 +220,7 @@ Es unidad incluye una novedad: DISEÑO. Debes intencionar tu obra. Esta vez te p
 * Incluye un enlace a tu código en el editor de p5.js.
 * Incluye el código fuente.
 * Captura de pantallas de tu obra con las imágenes que más te gusten
+
 
 
 
