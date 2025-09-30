@@ -213,6 +213,13 @@ Es hora de una nueva creación. Diseña e implementa una obra de arte generativa
 Documenta el proceso de creación, incluyendo la idea inicial, bocetos, experimentación con el código y el resultado final.
 
 Es unidad incluye una novedad: DISEÑO. Debes intencionar tu obra. Esta vez te pediré que DISEÑES antes de generar código. Define un concepto, haz bocetos, define la interacción, etc. ¿Cuál es el concepto de tu obra? ¿Qué quieres comunicar con ella?
+
+* **Un objeto aletorio con diferentes propiedades**: aleatoriedad y polimorfismo
+* **Movimiento parabolico o gravedad**: fuerzas
+* **Particulas**:
+* **Optimizar Espacio**:
+
+
 * Debes utilizar los conceptos de herencia y polimorfismo que revisaste en la fase de investigación.
 * Debes utilizar al menos un concepto de cada una de las unidades anteriores: 4 conceptos.
 * Debes definir cómo vas a gestionar el tiempo de vida de las partículas y la memoria.
@@ -220,6 +227,7 @@ Es unidad incluye una novedad: DISEÑO. Debes intencionar tu obra. Esta vez te p
 * Incluye un enlace a tu código en el editor de p5.js.
 * Incluye el código fuente.
 * Captura de pantallas de tu obra con las imágenes que más te gusten
+
 
 
 
