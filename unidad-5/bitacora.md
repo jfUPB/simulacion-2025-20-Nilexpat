@@ -112,19 +112,54 @@ function draw() {
 
 
 ### Ejercicio 3
-1.
+1.agregar nuevas formas.
 
 2. En este primer ejemplo las particulas se crean por medio de una matriz la cual lee la matriz de atras hacia delante, esto para que no cause error a la hora de iterar(recorrer la matriz), para modificar una matriz hay que tener encuanta la funcion splice y lo que hace cada uno de sus parametros `` array.splice(punto de partida del array, cantidad de elemtos que vas a eliminas, agregar item1,agregar item2, ...); ``.
 3.codigo Fuente.
 
-  ``js
-  
+  ```js
+ class Particle {
+  constructor(x, y) {
+    this.position = createVector(x, y);
+    this.acceleration = createVector(0, 0);
+    this.velocity = createVector(random(-1, 1), random(-1, 0));
+    this.lifespan = 255.0;
 
+    this.col = color(random(255), random(255), random(255));
+  }
 
-  
-  ``
-4. [link del ejercicio modificado]()
-agregar nuevas formas.
+  run() {
+    let gravity = createVector(0, 0.05);
+    this.applyForce(gravity);
+    this.update();
+    this.show();
+  }
+
+  applyForce(force) {
+    this.acceleration.add(force);
+  }
+
+  update() {
+    this.velocity.add(this.acceleration);
+    this.position.add(this.velocity);
+    this.lifespan -= 2;
+    this.acceleration.mult(0);
+  }
+
+  show() {
+    stroke(0, this.lifespan);
+    strokeWeight(2);
+
+    fill(red(this.col), green(this.col), blue(this.col), this.lifespan);
+    circle(this.position.x, this.position.y, 8);
+  }
+
+  isDead() {
+    return this.lifespan < 0.0;
+  }
+}
+  ```
+4. [link del ejercicio modificado](https://editor.p5js.org/natureofcode/sketches/2ZlNJp2EW)
 
 ### Ejercicio 4
 1.
@@ -222,6 +257,7 @@ Es unidad incluye una novedad: DISEÑO. Debes intencionar tu obra. Esta vez te p
 * Incluye un enlace a tu código en el editor de p5.js.
 * Incluye el código fuente.
 * Captura de pantallas de tu obra con las imágenes que más te gusten
+
 
 
 
