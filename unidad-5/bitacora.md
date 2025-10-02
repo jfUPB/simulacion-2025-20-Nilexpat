@@ -210,7 +210,7 @@ let gravity = createVector(0, 0.1);
 
 ### Ejercicio 5
 
-1.Que el suelo sea una superficie que perimita que todas la bolitas reboten y tengan colores aleatorios.
+1.Que el suelo sea una superficie que perimita que todas la bolitas reboten y tengan colores aleatorios...Se me dificulto hacer eso entonces la modificacion que agregue fue crear nuevos repellers en el canva con el click del mouse.
 
 2.  Al observar el código, notamos que en el archivo particula.js ya se define un tiempo de vida para cada partícula. Tambien podemos observar que existe una función llamada run en el emitter.js, la cual recorre un arreglo de partículas de atras hacia delante y se encarga de eliminar de la lista las particulas que ya murieron ``this.particles.sdplice(i,1);``.
    
@@ -269,6 +269,7 @@ Algo con la camara y particulas moviendose pero son controladas por una persona,
 4. [link del ejercicio modificado]()
 
 * Captura de pantallas de tu obra con las imágenes que más te gusten
+
 
 
 
