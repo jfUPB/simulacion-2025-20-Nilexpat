@@ -212,14 +212,38 @@ let gravity = createVector(0, 0.1);
 
 1.Que el suelo sea una superficie que perimita que todas la bolitas reboten y tengan colores aleatorios.
 
-2. En este primer ejemplo las particulas se crean por medio de una matriz la cual lee la matriz de atras hacia delante, esto para que no cause error a la hora de iterar(recorrer la matriz), para modificar una matriz hay que tener encuanta la funcion splice y lo que hace cada uno de sus parametros `` array.splice(punto de partida del array, cantidad de elemtos que vas a eliminas, agregar item1,agregar item2, ...); ``.
+2.  Al observar el código, notamos que en el archivo particula.js ya se define un tiempo de vida para cada partícula. Tambien podemos observar que existe una función llamada run en el emitter.js, la cual recorre un arreglo de partículas de atras hacia delante y se encarga de eliminar de la lista las particulas que ya murieron ``this.particles.sdplice(i,1);``.
+   
 3.codigo Fuente.
 
   ```js
- 
+class Repeller {
+  constructor(x, y) {
+    this.position = createVector(x, y);
+    //{!1} How strong is the repeller?
+    this.power = 120;
+  }
+
+  show() {
+    stroke(0);
+    strokeWeight(2);
+    fill(127);
+    circle(this.position.x, this.position.y, 32);
+  }
+
+  repel(particle) {
+    //{!6 .code-wide} This is the same repel algorithm we used in Chapter 2: forces based on gravitational attraction.
+    let force = p5.Vector.sub(this.position, particle.position);
+    let distance = force.mag();
+    distance = constrain(distance, 5, 50);
+    let strength = (-1 * this.power) / (distance * distance);
+    force.setMag(strength);
+    return force;
+  }
+}
 
   ```
-4. [link del ejercicio modificado]()
+4. [link del ejercicio modificado](https://editor.p5js.org/nicolasparra2024/sketches/olI_mW8kX)
 
 
 ## actividad 3
@@ -245,6 +269,7 @@ Algo con la camara y particulas moviendose pero son controladas por una persona,
 4. [link del ejercicio modificado]()
 
 * Captura de pantallas de tu obra con las imágenes que más te gusten
+
 
 
 
