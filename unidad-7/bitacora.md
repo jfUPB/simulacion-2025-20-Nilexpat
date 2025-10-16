@@ -219,3 +219,10 @@ function draw() {
 ```
 
 [link de la Apply](https://editor.p5js.org/nicolasparra2024/sketches/nth9t54V1)
+
+## Auto evaluación unidad 7
+ 
+Nota:5
+ 
+Realicé las 3 actividades completas
+
