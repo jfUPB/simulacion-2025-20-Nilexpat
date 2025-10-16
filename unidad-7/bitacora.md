@@ -113,3 +113,109 @@ Proporciona tu explicación clara y concisa de los conceptos clave (Engine, Worl
 * **Constraint:** creo que este es el que hace que los objetos tengan un coliciones.
 * **MouseConstraint:** Es el que perimte que uno interactue con el mundo por medio del mouse.
 
+## Actividad 3 (apply)
+
+     
+```js 
+const { Engine, World, Bodies, Body } = Matter;
+
+let engine, world;
+let ground;
+let letters = [];
+let word = "MATRIX";
+let fontSize = 64;
+
+// Dos fuentes
+let customFont;
+let defaultFont;
+
+function preload() {
+  customFont = loadFont("matrix.ttf"); // 👈 tu fuente decorativa
+}
+
+function setup() {
+  createCanvas(800, 800);
+  defaultFont = "monospace"; // fuente estándar del sistema
+  textAlign(CENTER, CENTER);
+  textSize(fontSize);
+  noStroke();
+
+  engine = Engine.create();
+  world = engine.world;
+  world.gravity.y = 1;
+
+  // Suelo
+  ground = Bodies.rectangle(width / 2, height/2 +50, width, 40, {
+    isStatic: true,
+    restitution: 1,
+  });
+  World.add(world, ground);
+
+  // Crear cuerpos para cada letra
+  let spacing = width / (word.length + 1);
+  for (let i = 0; i < word.length; i++) {
+    let x = spacing * (i + 1);
+    let y = random(-200, -50);
+    let body = Bodies.rectangle(x, y, fontSize, fontSize, {
+      restitution: 0.6,
+      friction: 0.3,
+    });
+    World.add(world, body);
+
+    letters.push({
+      body,
+      char: word[i],
+      display: random(["0", "1"]),
+      revealed: false,
+      glow: 0, // efecto de brillo
+    });
+  }
+}
+
+function draw() {
+  background(0);
+  Engine.update(engine);
+
+  textSize(fontSize);
+
+  for (let l of letters) {
+    let pos = l.body.position;
+    let vel = l.body.velocity;
+    let angle = l.body.angle;
+
+    push();
+    translate(pos.x, pos.y);
+    rotate(angle);
+
+    let speed = Math.abs(vel.x) + Math.abs(vel.y);
+
+    // Si ya no rebota, revelar la letra
+    if (speed < 0.2 && !l.revealed) {
+      l.revealed = true;
+      l.display = l.char;
+      l.glow = 255; // empieza con brillo fuerte
+    }
+
+    // Mientras se mueve, mostrar 0 o 1 con fuente normal
+    if (!l.revealed) {
+      if (frameCount % 3 === 0) {
+        l.display = random(["0", "1"]);
+      }
+      textFont(defaultFont);
+      fill(0, 255, 70);
+    } else {
+      textFont(customFont);
+      // Efecto de brillo
+      let glow = l.glow;
+      fill(0, glow, 70 + glow / 4);
+      l.glow = max(70, l.glow - 5); // el brillo va bajando suavemente
+    }
+
+    text(l.display, 0, 0);
+    pop();
+  }
+}
+
+```
+
+[link de la Apply](https://editor.p5js.org/nicolasparra2024/sketches/nth9t54V1)
