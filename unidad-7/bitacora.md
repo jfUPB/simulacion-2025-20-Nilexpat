@@ -103,3 +103,13 @@ Engine.update(engine);
      
 ```
 <img width="391" height="306" alt="image" src="https://github.com/user-attachments/assets/49e56f91-4ab4-4474-8c04-685d95be3fb7" />
+
+
+Proporciona tu explicación clara y concisa de los conceptos clave (Engine, World, Bodies, Constraint, MouseConstraint).
+
+* **Engine:** Este es el motor que le da vida al programa durante cada frame.
+* **World:** Este como su nombre los dice es el espacio o mundo donde se encuentra el motor y se accionan todas las fisicas de los objeto.
+* **Bodies:** Estos son los objetos fisicos dentro de este mundo.
+* **Constraint:** creo que este es el que hace que los objetos tengan un coliciones.
+* **MouseConstraint:** Es el que perimte que uno interactue con el mundo por medio del mouse.
+
